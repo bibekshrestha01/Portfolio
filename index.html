@@ -8,6 +8,15 @@
     <meta content="" name="keywords">
     <meta content="" name="description">
 
+    <!--thumbnail-->
+   
+            <meta property="og:title" content="My Portfolio Website" />
+            <meta property="og:description" content="Check out my latest projects and work experience." />
+            <meta property="og:image" content="https://bibekshrestha313.com.np/img/bibek2.png" />
+            <meta property="og:url" content="https://bibekshrestha313.com.np" />
+         
+          
+    
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
@@ -82,7 +91,7 @@
                     <h2 class="typed-text-output d-inline"></h2>
                     <div class="typed-text d-none">Mechanical Engineer, Renewable Energy Enthusiast, Researcher</div>
                     <div class="d-flex align-items-center pt-5">
-                        <a href="img/Resume.pdf" target="_blank" class="btn btn-primary py-3 px-4 me-5" style="margin-left: 95px;">Download CV</a>
+                        <a href="img/Resume-Bibek Shrestha (4-20-2025).pdf" target="_blank" class="btn btn-primary py-3 px-4 me-5" style="margin-left: 95px;">Download CV</a>
                        <!-- <button type="button" class="btn-play" data-bs-toggle="modal"
                             data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
                             <span></span>
@@ -117,7 +126,7 @@
                 <div class="modal-body">
                     <!-- 16:9 aspect ratio -->
                     <div class="ratio ratio-16x9">
-                        < class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="alwaysiframe">
+                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="alwaysiframe">
                             allow="autoplay"></iframe>
                     </div>
                 </div>
@@ -144,20 +153,107 @@
                     <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Passion for Machinery</p>
                     <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Product Design and Development</p>
                     <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Renewable Energy</p>
-                    <a class="btn btn-primary py-3 px-5 mt-3" href="img/Resume-Bibek Shrestha.pdf" target="_blank">Curiculum Vitae</a>
+                    <a class="btn btn-primary py-3 px-5 mt-3" href="img/Resume-Bibek Shrestha (4-20-2025).pdf" target="_blank">Curiculum Vitae</a>
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="row g-3 mb-4">
                         <!-- <div class="col-sm-6">
                             <img class="img-fluid rounded" src="img/about.jpg" alt="">
                         </div> -->
-                        
+                        <!DOCTYPE html>
+                        <html lang="en">
+                        <head>
                             <meta charset="UTF-8">
                             <meta name="viewport" content="width=device-width, initial-scale=1.0">
                             <title>Image Full Screen Preview with Shake Effect</title>
-                            
+                            <style>
+                                .img-fluid {
+                                    max-width: 100%;
+                                    height: auto;
+                                }
                         
-                       
+                                .rounded {
+                                    border-radius: 0.25rem;
+                                }
+                        
+                                /* Shake animation */
+                                @keyframes shake {
+                                    0% { transform: translate(1px, 1px) rotate(0deg); }
+                                    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+                                    20% { transform: translate(-3px, 0px) rotate(1deg); }
+                                    30% { transform: translate(3px, 2px) rotate(0deg); }
+                                    40% { transform: translate(1px, -1px) rotate(1deg); }
+                                    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+                                    60% { transform: translate(-3px, 1px) rotate(0deg); }
+                                    70% { transform: translate(3px, 1px) rotate(-1deg); }
+                                    80% { transform: translate(-1px, -1px) rotate(1deg); }
+                                    90% { transform: translate(1px, 2px) rotate(0deg); }
+                                    100% { transform: translate(1px, -2px) rotate(-1deg); }
+                                }
+                        
+                                .shake:hover {
+                                    animation: shake 0.5s;
+                                    animation-iteration-count: 1;
+                                    animation-fill-mode: forwards;
+                                }
+                        
+                                /* Modal styles */
+                                .modal {
+                                    display: none; 
+                                    position: fixed; 
+                                    z-index: 1; 
+                                    padding-top: 10%; /* Adjust the padding-top value as needed */
+                                    left: 0;
+                                    top: 0;
+                                    width: 100%; 
+                                    height: 100%; 
+                                    overflow: auto; 
+                                    background-color: rgb(0,0,0); 
+                                    background-color: rgba(0,0,0,0.9); 
+                                }
+                        
+                                .modal-content {
+                                    margin: auto;
+                                    display: block;
+                                    width: 80%;
+                                    max-width: 700px;
+                                }
+                        
+                                .modal-content, #caption { 
+                                    animation-name: zoom;
+                                    animation-duration: 0.6s;
+                                }
+                        
+                                @keyframes zoom {
+                                    from {transform:scale(0)} 
+                                    to {transform:scale(1)}
+                                }
+                        
+                                .close {
+                                    position: absolute;
+                                    top: 15px;
+                                    right: 35px;
+                                    color: #fff;
+                                    font-size: 40px;
+                                    font-weight: bold;
+                                    transition: 0.3s;
+                                }
+                        
+                                .close:hover,
+                                .close:focus {
+                                    color: #bbb;
+                                    text-decoration: none;
+                                    cursor: pointer;
+                                }
+                        
+                                @media only screen and (max-width: 700px){
+                                    .modal-content {
+                                        width: 100%;
+                                    }
+                                }
+                            </style>
+                        </head>
+                        <body>
                         
     <div class="col-sm-6">
         <img class="img-fluid rounded shake preview-image" src="img/about.jpg" alt="Image preview 1">
@@ -211,18 +307,34 @@
                 <div class="col-md-6 text-center animate-box">
                     <div class="services color-1" style="border-radius: 30px;">
                         <span class="icon">
-                        
-                                
-                                
+                            <body>
+                                <!DOCTYPE html>
+                                <html lang="en">
+                                <head>
                                     <meta charset="UTF-8">
                                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
                                     <title>CAD Software Skill Icon Example</title>
                                     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-                               
+                                    <style>
+                                        .cad-software-skill {
+                                            font-size: 15px; /* Adjust size as needed */
+                                            color: #333; /* Adjust color as needed */
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                
+                                        .cad-software-skill i {
+                                            margin-right: 8px; /* Space between icon and text */
+                                        }
+                                    </style>
+                                </head>
+                                <body>
                                     <!-- Example CAD Software skill icon with text -->
                                     <div class="cad-software-skill">
                                         <i class="fas fa-drafting-compass"></i> CAD Software
                                     </div>
+                                </body>
+                                </html>
                                 
                         </span>
                         <div class="desc" >
@@ -235,7 +347,7 @@
                 <div class="col-md-6 text-center animate-box">
                     <div class="services color-3" style="border-radius: 30px;">
                         <span class="icon">
-                            
+                            <body>
                                 <!-- Other body content -->
                             
                                 <!-- Example CAE Software skill icon with text -->
@@ -244,7 +356,7 @@
                                 </div>
                             
                                 <!-- Other body content -->
-                           
+                            </body>
                             
                            <!-- <i class="icon-phone3"></i>-->
                         </span>
@@ -259,18 +371,18 @@
                     <div class="services color-2" style="border-radius: 30px;">
                         <span class="icon">
                             <div class="skill">
-                                
+                                <body>
                                     <!-- Other body content -->
                                 
                                     <!-- Example combined Data Analysis and Documentation skill icon with text -->
                                     <div class="combined-skill">
                                         <i class="fas fa-chart-bar" ></i> 
-                                        <i class="fas fa-file-alt"></i>
-                                        Documentation
+                                        <i class="fas fa-file-alt"></i>Documentation
                                     </div>
-                                
+                                    
                                     <!-- Other body content -->
-                               
+                                </body>
+                                
                             </div>
                         </span>
                         <div class="desc">
@@ -304,100 +416,164 @@
     </section>
     <!-- Expertise End -->
 
-
-
-    <!-- Projects Start -->
-    <div class="container-xxl py-6 pt-5" id="project">
-        <div class="container">
-            <div class="row g-5 mb-5 align-items-center wow fadeInUp" data-wow-delay="0.1s">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Projects</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+            }
+    
+            .project-container {
+                width: 90%;
+                margin: 0 auto;
+            }
+    
+            .project-header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 50px;
+            }
+    
+            .project-header h1 {
+                font-size: 50px;
+            }
+    
+            .project-nav {
+                display: flex;
+                gap: 20px;
+            }
+    
+            .project-nav a {
+                text-decoration: none;
+                color: black;
+                font-size: 18px;
+                border-bottom: 2px solid transparent;
+            }
+    
+            .project-nav a.active-project {
+                border-bottom: 2px solid black;
+            }
+    
+            .project-content {
+                margin-top: 30px;
+            }
+    
+            .project-content > div {
+                display: none;
+            }
+    
+            .project-content > div.active-project {
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container-xxl py-6 pt-5" id="project">
+        <div class="project-container">
+            <div class="project-header">
+                <!-- <h1>My Projects</h1> -->
                 <div class="col-lg-6">
                     <h1 class="display-5 mb-0">My Projects</h1>
                 </div>
-                <div class="col-lg-6 text-lg-end">
-                    <ul class="list-inline mx-n3 mb-0" id="portfolio-flters">
-                        <li class="mx-3 active" data-filter="*">All Projects</li>
-                        <li class="mx-3" data-filter=".first">Fabricated</li>
-                        <li class="mx-3" data-filter=".second">Design</li>
-                    </ul>
+                <div class="project-nav">
+                    <a href="#" id="all-projects-link" class="active-project">All Projects</a>
+                    <a href="#" id="fabricated-link">Fabricated</a>
+                    <a href="#" id="design-link">Design</a>
                 </div>
             </div>
-            <div class="row g-4 portfolio-container wow fadeInUp" data-wow-delay="0.1s">
-                <div class="col-lg-12 col-md-6 mx-auto portfolio-item first">
-                    <div class="infographic-container">
-                        <div class="main-image">
-                            <h2 style="text-align: left;">Three Wheeler Hybrid Car</h2>
-                            <img class="img-fluid rounded shake preview-image"  src="img/car1.jpg" alt="Three Wheeler Hybrid Car Side">
-                        </div>
-                        <div class="supporting-images">
-                            <div class="supporting-image">
-                                <img class="img-fluid rounded shake preview-image"  src="img/car2.jpg" alt="Three Wheeler Hybrid Car Front">
-                            </div>
-                            <div class="supporting-image">
-                                <img class="img-fluid rounded shake preview-image"  src="img/Sathi.jpg" alt="Three Wheeler Hybrid Car">
-                            </div>
-                        </div>
-                        <p style="text-align: center;">Three Wheeler Hybrid Car</p>
-                        <div class="supporting-images">
-                            <div class="supporting-image">
-                                <img class="img-fluid rounded shake preview-image"  src="img/wave1.jpg" alt="Three Wheeler Hybrid Car Front">
-                            </div>
-                            <div class="supporting-image">
-                                <img class="img-fluid rounded shake preview-image"  src="img/wave2.jpg" alt="Three Wheeler Hybrid Car">
-                            </div>
-                        </div>
-                        <p style="text-align: center;">Wave Magazine, February 2019</p>
-                        <div class="video-container">
-                            <video controls>
-                                <source src="img/Video CAN-InfoTech.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
-                        <p style="text-align: center;">CAN-InfoTech, 2019</p>
-                        <p style="color: rgb(10, 173, 173); margin-left: 20px;">Highlights:</p>
-                        <ul>
-                            <li style="text-align: justify;">Developed a versatile three-wheeler hybrid car capable of operating in both petrol and electric modes.</li>
-                            <li style="text-align: justify;">Integrated a 125cc 4-stroke bike engine alongside a 750W BLDC motor, allowing users to choose between traditional combustion power and eco-friendly electric propulsion based on preference and driving conditions.</li>
-                        </ul>
+    
+            <div class="project-content">
+                <div id="all-projects" class="active-project">
+                    <!-- Content for All Projects -->
+                    <h2>All Projects</h2>
+                    <div id="all-projects-content">
+                        <!-- This is where content for all projects will go, including Fabricated and Design -->
                     </div>
-
-                    <div class="infographic-container">
-                        <div class="main-image">
-                            <h2 style="text-align: left;">E-Bike</h2>
-                            <img class="img-fluid rounded shake preview-image"  src="img/bike/Bike-Photo-3-Dhankuta.jpg" alt="E-Bike">
-                        </div>
-                        <div class="supporting-images">
-                            <div class="supporting-image">
-                                <img class="img-fluid rounded shake preview-image"  src="img/bike/Bike-baba.jpg" alt="Three Wheeler Hybrid Car Front">
+                </div>
+                <div id="fabricated">
+                    <!-- Content for Fabricated -->
+                    <h2>Fabricated Projects</h2>
+                    <div id="fabricated-content">
+                        
+                        <div class="infographic-container">
+                            <div class="main-image">
+                                <h2 style="text-align: left;">E-Bike</h2>
+                                <img class="img-fluid rounded shake preview-image"  src="img/bike/Bike-Photo-3-Dhankuta.jpg" alt="E-Bike">
                             </div>
-                            <div class="supporting-image">
-                                <img class="img-fluid rounded shake preview-image"  src="img/bike/Bike-mummy1.jpg" alt="Three Wheeler Hybrid Car">
+                            <div class="supporting-images">
+                                <div class="supporting-image">
+                                    <img class="img-fluid rounded shake preview-image"  src="img/bike/Bike-baba.jpg" alt="Three Wheeler Hybrid Car Front">
+                                </div>
+                                <div class="supporting-image">
+                                    <img class="img-fluid rounded shake preview-image"  src="img/bike/Bike-mummy1.jpg" alt="Three Wheeler Hybrid Car">
+                                </div>
                             </div>
+                            <p style="text-align: center;">E-Bike</p>
+                            <div class="main-image" style="width: full; display: flex; align-items: center; justify-items: center;">
+                                <img class="img-fluid rounded shake preview-image"  src="img/bike/newspaper.jpg" alt="E-Bike">
+                            </div>
+                            <p style="text-align: center;">Rajdhani, 24 Jun 2017</p>
+                            <div class="video-container">
+                                <video controls >
+                                    <source src="img/bike/WhatsApp Video 2024-05-20 at 16.04.49.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <div style="text-align: center;"">
+                                <a href="https://www.youtube.com/watch?v=J2hBY7EWV_A&list=PLaFdG6FUHktbW0NTRYpxfnDKQVRCMYRUQ", target="_blank">Sagarmatha Tv, 23 Jun 2017</a>
+                            </div>
+                            <p style="color: rgb(10, 173, 173); margin-left: 20px;">Highlights:</p>
+                            <ul>
+                                <li style="text-align: justify;">Fabricated a robust chassis to ensure durability and safety, employing hands-on fabrication techniques.</li>
+                                <li style="text-align: justify;">Integrated a 48V 500W brushless hub motor and compatible controller, achieving smooth propulsion and enabling a top speed of 40 km/hr with a mileage of 40-60 km/hr.</li>
+                            </ul>
+                            <a href="https://sangalokhabar.com/6771?fbclid=IwZXh0bgNhZW0CMTEAAR36aUHk7YO3XYAAlhQCbeVjkvkpWEyfptLSTsi_ufBMSOHCeOYR7pCHUUI_aem_AXW6EwkMF-jncrRNFyHAPwGSBQR-gdSdUQ4BJCxBIrOm7snfQ--fzX6DCSdsHN6oBIcXYx79zhpDH6Hz8xL6v9fL" target="_blank" style="color: blue; margin-left: 15px;">Newspaper Sangalokhabar</a>
+                           
+                        </div> 
+    
+                        <div class="infographic-container">
+                            <div class="main-image">
+                                <h2 style="text-align: left;">Three Wheeler Hybrid Car</h2>
+                                <img class="img-fluid rounded shake preview-image"  src="img/car1.jpg" alt="Three Wheeler Hybrid Car Side">
+                            </div>
+                            <div class="supporting-images">
+                                <div class="supporting-image">
+                                    <img class="img-fluid rounded shake preview-image"  src="img/car2.jpg" alt="Three Wheeler Hybrid Car Front">
+                                </div>
+                                <div class="supporting-image">
+                                    <img class="img-fluid rounded shake preview-image"  src="img/Sathi.jpg" alt="Three Wheeler Hybrid Car">
+                                </div>
+                            </div>
+                            <p style="text-align: center;">Three Wheeler Hybrid Car</p>
+                            <div class="supporting-images">
+                                <div class="supporting-image">
+                                    <img class="img-fluid rounded shake preview-image"  src="img/wave1.jpg" alt="Three Wheeler Hybrid Car Front">
+                                </div>
+                                <div class="supporting-image">
+                                    <img class="img-fluid rounded shake preview-image"  src="img/wave2.jpg" alt="Three Wheeler Hybrid Car">
+                                </div>
+                            </div>
+                            <p style="text-align: center;">Wave Magazine, February 2019</p>
+                            <div class="video-container">
+                                <video controls>
+                                    <source src="img/Video CAN-InfoTech.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <p style="text-align: center;">CAN-InfoTech, 2019</p>
+                            <p style="color: rgb(10, 173, 173); margin-left: 20px;">Highlights:</p>
+                            <ul>
+                                <li style="text-align: justify;">Developed a versatile three-wheeler hybrid car capable of operating in both petrol and electric modes.</li>
+                                <li style="text-align: justify;">Integrated a 125cc 4-stroke bike engine alongside a 750W BLDC motor, allowing users to choose between traditional combustion power and eco-friendly electric propulsion based on preference and driving conditions.</li>
+                            </ul>
                         </div>
-                        <p style="text-align: center;">E-Bike</p>
-                        <div class="main-image" style="width: full; display: flex; align-items: center; justify-items: center;">
-                            <img class="img-fluid rounded shake preview-image"  src="img/bike/newspaper.jpg" alt="E-Bike">
-                        </div>
-                        <p style="text-align: center;">Rajdhani, 24 Jun 2017</p>
-                        <div class="video-container">
-                            <video controls >
-                                <source src="img/bike/WhatsApp Video 2024-05-20 at 16.04.49.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
-                        <div style="text-align: center;"">
-                            <a href="https://www.youtube.com/watch?v=J2hBY7EWV_A&list=PLaFdG6FUHktbW0NTRYpxfnDKQVRCMYRUQ", target="_blank">Sagarmatha Tv, 23 Jun 2017</a>
-                        </div>
-                        <p style="color: rgb(10, 173, 173); margin-left: 20px;">Highlights:</p>
-                        <ul>
-                            <li style="text-align: justify;">Fabricated a robust chassis to ensure durability and safety, employing hands-on fabrication techniques.</li>
-                            <li style="text-align: justify;">Integrated a 48V 500W brushless hub motor and compatible controller, achieving smooth propulsion and enabling a top speed of 40 km/hr with a mileage of 40-60 km/hr.</li>
-                        </ul>
-                        <a href="https://sangalokhabar.com/6771?fbclid=IwZXh0bgNhZW0CMTEAAR36aUHk7YO3XYAAlhQCbeVjkvkpWEyfptLSTsi_ufBMSOHCeOYR7pCHUUI_aem_AXW6EwkMF-jncrRNFyHAPwGSBQR-gdSdUQ4BJCxBIrOm7snfQ--fzX6DCSdsHN6oBIcXYx79zhpDH6Hz8xL6v9fL" target="_blank" style="color: blue; margin-left: 15px;">Newspaper Sangalokhabar</a>
-                       
-                    </div> 
 
-
-                    <div class="infographic-container">
+                        <div class="infographic-container">
                         <div class="main-image">
                             <h2 style="text-align: left;">Go-Kart: FireBall 2.0</h2>
                             <img class="img-fluid rounded shake preview-image"  src="img/FireBall2.0/gokart2.jpg" alt="Go-Kart: FireBall 2.0">
@@ -475,8 +651,6 @@
                         <a href="img/Bamboo Panel Machine/BME_final_report_076bme004006011039finalreport1.pdf" target="_blank" style="color: blue; margin-left: 15px;">Click here to learn more</a>
                     </div>
 
-
-
                     <div class="infographic-container">
                         <div class="main-image">
                             <h2 style="text-align: left;">Go-Kart: FireBall</h2>
@@ -504,7 +678,7 @@
                             <li style="text-align: justify;">Constructed a high-performance go-kart tailored for racing purposes, equipped with a potent 180cc four-stroke bike engine.</li>
                             <li style="text-align: justify;">Achieved impressive speeds of upto 75 km/hr, showcasing superior acceleration and handling characteristics on the racetrack.</li>
                         </ul>
-                     
+                      
                     </div>
 
                     <div class="infographic-container">
@@ -583,7 +757,7 @@
                             <li style="text-align: justify;">Fabricated a small windmill designed for rooftop installation, capable of generating approximately 200W of power, contributing to sustainable energy solutions for buildings.</li>
                             <li style="text-align: justify;">Featured the windmill to rotate 360 degrees, allowing for automatic adjustment to the direction of wind flow. This feature ensures optimal wind capture and maximizes energy generation efficiency.</li>
                         </ul>
-                     
+                    
                     </div>
 
 
@@ -634,12 +808,648 @@
                         </div>
                        
                     </div>
+                    </div>
                 </div>
-                <!-- Add more portfolio items as needed -->
-                
+                <div id="design">
+                    <!-- Content for Design -->
+                    <h2>Design Projects</h2>
+                    <div id="design-content">
 
-                <div class="col-lg-12 col-md-6 mx-auto portfolio-item second">
-                    <div class="infographic-container">
+                        <div style="" class="infographic-container">
+                            <div class="main-image">
+                                <h2 style="text-align: left;">Safa Tempo</h2>
+                                <img class="img-fluid rounded shake preview-image" style="width: 80%;" src="img/Safa tempo/1.png" alt="CAD isometric view">
+                            </div>
+                            <div class="supporting-images">
+                                <div class="supporting-image">
+                                    <img class="img-fluid rounded shake preview-image"  src="img/Safa tempo/2.png" alt="load calculation">
+                                </div>
+                                <div class="supporting-image">
+                                    <img class="img-fluid rounded shake preview-image"  src="img/Safa tempo/3.png" alt="boq">
+                                </div>
+                            </div>
+                            
+                            <p style="color: rgb(10, 173, 173); margin-left: 20px;">Highlights:</p>
+                            <ul>
+                                <li style="text-align: justify;">Design of Safa Tempo which is environment friendly and it remains 
+                                    dedicated to being a sustainable method of transportation.</li>
+                            </ul>
+                    
+                        </div>
+
+                        <div style="" class="infographic-container">
+                            <div class="main-image">
+                                <h2 style="text-align: left;">Circular Staircase</h2>
+                                <img class="img-fluid rounded shake preview-image"  src="img/Staircase/11.png" alt="CAD isometric view">
+                            </div>
+                            <div class="supporting-images">
+                                <div class="supporting-image">
+                                    <img class="img-fluid rounded shake preview-image"  src="img/Staircase/2.png" alt="load calculation">
+                                </div>
+                                <div class="supporting-image">
+                                    <img class="img-fluid rounded shake preview-image"  src="img/Staircase/3.png" alt="boq">
+                                </div>
+                            </div>
+
+                            <div class="supporting-images">
+                                <div class="supporting-image">
+                                    <img class="img-fluid rounded shake preview-image"  src="img/Staircase/44.png" alt="load calculation">
+                                </div>
+                                <div class="supporting-image">
+                                    <img class="img-fluid rounded shake preview-image"  src="img/Staircase/5.png" alt="boq">
+                                </div>
+                            </div>
+                            
+                            <p style="color: rgb(10, 173, 173); margin-left: 20px;">Highlights:</p>
+                            <ul>
+                                <li style="text-align: justify;">Designed a Circular Staircase in AutoCAD.</li>
+                               
+                            </ul>
+                            
+                            <a href="img/Staircase/Stair Dhankuta.dwg" target="_blank" style="color: blue; margin-left: 15px;">CAD Drawing</a>
+                            <div></div>
+                            
+                        </div>
+
+                        <div style="" class="infographic-container">
+                            <div class="main-image">
+                                <h2 style="text-align: left;">Hybrid Vertical Axis Wind Turbine</h2>
+                                <img class="img-fluid rounded shake preview-image" style="width:70%;" src="img/hybrid wind turbine/1.png" alt="CAD isometric view">
+                            </div>
+                            <div class="supporting-images">
+                                <div class="supporting-image">
+                                    <img class="img-fluid rounded shake preview-image"  src="img/hybrid wind turbine/22.png" alt="load calculation">
+                                </div>
+                                <div class="supporting-image">
+                                    <div class="video-container">
+                                        <video controls>
+                                            <source src="img/hybrid wind turbine/WhatsApp Video 2024-07-06 at 02.49.32.mp4" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p style="color: rgb(10, 173, 173); margin-left: 20px;">Highlights:</p>
+                            <ul>
+                                <li style="text-align: justify;">Design of Hybrid Vertical Axis Turbine for urban area.</li>
+                               
+                            </ul>
+                            
+                            <a href="img/hybrid wind turbine/Hybrid VAWT.STEP" target="_blank" style="color: blue; margin-left: 15px;">CAD Drawing</a>
+                            <div></div>
+                            
+                        </div>
+                        
+                        <div style="" class="infographic-container">
+                            <div class="main-image">
+                                <h2 style="text-align: left;">Coldstore</h2>
+                                <img class="img-fluid rounded shake preview-image"  src="img/Coldstore/1.png" alt="CAD isometric view">
+                            </div>
+                            <div class="supporting-images">
+                                <div class="supporting-image">
+                                    <img class="img-fluid rounded shake preview-image"  src="img/Coldstore/excel1.png" alt="load calculation">
+                                </div>
+                                <div class="supporting-image">
+                                    <img class="img-fluid rounded shake preview-image"  src="img/Coldstore/boq1.png" alt="boq">
+                                </div>
+                            </div>
+                            
+                            <p style="color: rgb(10, 173, 173); margin-left: 20px;">Highlights:</p>
+                            <ul>
+                                <li style="text-align: justify;">Designed a seed potato cold store with a focus on maintaining optimal storage conditions through calculations of cooling loads, accounting for insulation, ambient temperature, desired storage temperature and humudity.</li>
+                                <li style="text-align: justify;">The refrigerated equipment was chosen based on the estimated cooling load and storage requirements, with an emphasis on energy efficiency and efficient temperature control to preserve seed potatoes.</li>
+                            </ul>
+                            <a href="img/Coldstore/Cold-store-load-calculationV1.xlsx" target="_blank" style="color: blue; margin-left: 15px;">Load Calculation and BOQ</a>
+                            <div></div>
+                            <a href="img/Coldstore/Chishyan Kendra.dwg" target="_blank" style="color: blue; margin-left: 15px;">CAD Drawing</a>
+                            <div></div>
+                            <a href="img/Coldstore/coldstore.pdf" target="_blank" style="color: blue; margin-left: 15px;">Report</a>
+                        </div>
+    
+                        <div class="infographic-container">
+                            <div class="main-image">
+                                <h2 style="text-align: left;">Firefighting System</h2>
+                                <img class="img-fluid rounded shake preview-image"  src="img/Firefighting system/cad.png" alt="sprinkler system">
+                            </div>
+                            <div class="supporting-images">
+                                <div class="supporting-image">
+                                    <img class="img-fluid rounded shake preview-image"  src="img/Firefighting system/excel photo.png" alt="load calculation">
+                                </div>
+                                <div class="supporting-image">
+                                    <img class="img-fluid rounded shake preview-image"  src="img/Firefighting system/boq.png" alt="boq">
+                                </div>
+                            </div>
+                            
+                            <p style="color: rgb(10, 173, 173); margin-left: 20px;">Highlights:</p>
+                            <ul>
+                                <li style="text-align: justify;">Designed a comprehensive firefighting system for the building, incorporating both fire sprinklers and fire hydrant standpipes strategically positioned for maximum coverage and efficiency in suppressing fires.</li>
+                                <li style="text-align: justify;">Conducted hydraulic calculations to optimize water distribution and pressure within the fire sprinkler and hydrant standpipe systems</li>
+                            </ul>
+                            <a href="img/Firefighting system/Sprinkler Hydraulic calculation for Ordinary Hazard-1 for video (3) (4).xlsx" target="_blank" style="color: blue; margin-left: 15px;">Load Calculations</a>
+                            <div></div>
+                            <a href="img/Firefighting system/Drawing1.dwg" target="_blank" style="color: blue; margin-left: 15px;">CAD Drawing</a>
+                            <div></div>
+                            <a href="img/Firefighting system/report.pdf" target="_blank" style="color: blue; margin-left: 15px;">Report</a>
+                        </div>
+    
+    
+                        <div class="infographic-container">
+                            <div class="main-image">
+                                <h2 style="text-align: left;">Air Conditioning: Cooling Load Calculation</h2>
+                                <img class="img-fluid rounded shake preview-image"  src="img/Air Conditioner/1.png" alt="CAD drawing">
+                            </div>
+                            <div class="supporting-images">
+                                <div class="supporting-image">
+                                    <img class="img-fluid rounded shake preview-image"  src="img/Air Conditioner/2.png" alt="load calculation">
+                                </div>
+                                <div class="supporting-image">
+                                    <img class="img-fluid rounded shake preview-image"  src="img/Air Conditioner/3.png" alt="load calculation">
+                                </div>
+                            </div>
+                            
+                            <p style="color: rgb(10, 173, 173); margin-left: 20px;">Highlights:</p>
+                            <ul>
+                                <li style="text-align: justify;">Conducted comprehensive calculations to assess the heating load of the building, considering factors such as insulation, ambient temperature, and desired room temperature.</li>
+                                <li style="text-align: justify;">Plan layout of split AC system in multistory building.</li>
+                            </ul>
+                            <a href="img/Air Conditioner/CLTD calculation.xlsx" target="_blank" style="color: blue; margin-left: 15px;">Load Calculation</a>
+                            <div></div>
+                            <a href="img/Air Conditioner/detail plan.dwg" target="_blank" style="color: blue; margin-left: 15px;">CAD Drawing</a>
+                            
+                        </div>
+
+                       
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <script>
+            document.getElementById('all-projects-link').addEventListener('click', function(event) {
+                event.preventDefault();
+                setActiveProjectSection('all-projects');
+            });
+    
+            document.getElementById('fabricated-link').addEventListener('click', function(event) {
+                event.preventDefault();
+                setActiveProjectSection('fabricated');
+            });
+    
+            document.getElementById('design-link').addEventListener('click', function(event) {
+                event.preventDefault();
+                setActiveProjectSection('design');
+            });
+    
+            function setActiveProjectSection(sectionId) {
+                // Remove active class from all links
+                document.querySelectorAll('.project-nav a').forEach(link => {
+                    link.classList.remove('active-project');
+                });
+    
+                // Add active class to clicked link
+                document.getElementById(sectionId + '-link').classList.add('active-project');
+    
+                // Hide all content sections
+                document.querySelectorAll('.project-content > div').forEach(section => {
+                    section.classList.remove('active-project');
+                });
+    
+                // Show the active content section
+                document.getElementById(sectionId).classList.add('active-project');
+    
+                // Populate All Projects section with content from other sections
+                if (sectionId === 'all-projects') {
+                    const allProjectsContent = document.getElementById('all-projects-content');
+                    const fabricatedContent = document.getElementById('fabricated-content').innerHTML;
+                    const designContent = document.getElementById('design-content').innerHTML;
+                    
+                    allProjectsContent.innerHTML = fabricatedContent + designContent;
+                }
+            }
+    
+            // Initial population of All Projects section
+            setActiveProjectSection('all-projects');
+        </script>
+    </body>
+</div>
+    </html>
+    
+    <!-- Projects Start
+    <div class="container-xxl py-6 pt-5" id="project">
+        <div class="container"> -->
+            <!-- <div class="row g-5 mb-5 align-items-center wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-6">
+                    <h1 class="display-5 mb-0">My Projects</h1>
+                </div>
+                <div class="col-lg-6 text-lg-end">
+                    <ul class="list-inline mx-n3 mb-0" id="portfolio-flters">
+                        <li class="mx-3 active" data-filter="*">All Projects</li>
+                        <li class="mx-3" data-filter=".first">Fabricated</li>
+                        <li class="mx-3" data-filter=".second">Design</li>
+                    </ul>
+                </div>
+            </div> -->
+            <!-- <div class="row g-4 portfolio-container wow fadeInUp" data-wow-delay="0.1s">
+                
+                <div class="col-lg-12 col-md-6 mx-auto portfolio-item first"> -->
+                    <!-- <div class="infographic-container">
+                        <div class="main-image">
+                            <h2 style="text-align: left;">E-Bike</h2>
+                            <img class="img-fluid rounded shake preview-image"  src="img/bike/Bike-Photo-3-Dhankuta.jpg" alt="E-Bike">
+                        </div>
+                        <div class="supporting-images">
+                            <div class="supporting-image">
+                                <img class="img-fluid rounded shake preview-image"  src="img/bike/Bike-baba.jpg" alt="Three Wheeler Hybrid Car Front">
+                            </div>
+                            <div class="supporting-image">
+                                <img class="img-fluid rounded shake preview-image"  src="img/bike/Bike-mummy1.jpg" alt="Three Wheeler Hybrid Car">
+                            </div>
+                        </div>
+                        <p style="text-align: center;">E-Bike</p>
+                        <div class="main-image" style="width: full; display: flex; align-items: center; justify-items: center;">
+                            <img class="img-fluid rounded shake preview-image"  src="img/bike/newspaper.jpg" alt="E-Bike">
+                        </div>
+                        <p style="text-align: center;">Rajdhani, 24 Jun 2017</p>
+                        <div class="video-container">
+                            <video controls >
+                                <source src="img/bike/WhatsApp Video 2024-05-20 at 16.04.49.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div style="text-align: center;"">
+                            <a href="https://www.youtube.com/watch?v=J2hBY7EWV_A&list=PLaFdG6FUHktbW0NTRYpxfnDKQVRCMYRUQ", target="_blank">Sagarmatha Tv, 23 Jun 2017</a>
+                        </div>
+                        <p style="color: rgb(10, 173, 173); margin-left: 20px;">Highlights:</p>
+                        <ul>
+                            <li style="text-align: justify;">Fabricated a robust chassis to ensure durability and safety, employing hands-on fabrication techniques.</li>
+                            <li style="text-align: justify;">Integrated a 48V 500W brushless hub motor and compatible controller, achieving smooth propulsion and enabling a top speed of 40 km/hr with a mileage of 40-60 km/hr.</li>
+                        </ul>
+                        <a href="https://sangalokhabar.com/6771?fbclid=IwZXh0bgNhZW0CMTEAAR36aUHk7YO3XYAAlhQCbeVjkvkpWEyfptLSTsi_ufBMSOHCeOYR7pCHUUI_aem_AXW6EwkMF-jncrRNFyHAPwGSBQR-gdSdUQ4BJCxBIrOm7snfQ--fzX6DCSdsHN6oBIcXYx79zhpDH6Hz8xL6v9fL" target="_blank" style="color: blue; margin-left: 15px;">Newspaper Sangalokhabar</a>
+                       
+                    </div>  -->
+
+                    <!-- <div class="infographic-container">
+                        <div class="main-image">
+                            <h2 style="text-align: left;">Three Wheeler Hybrid Car</h2>
+                            <img class="img-fluid rounded shake preview-image"  src="img/car1.jpg" alt="Three Wheeler Hybrid Car Side">
+                        </div>
+                        <div class="supporting-images">
+                            <div class="supporting-image">
+                                <img class="img-fluid rounded shake preview-image"  src="img/car2.jpg" alt="Three Wheeler Hybrid Car Front">
+                            </div>
+                            <div class="supporting-image">
+                                <img class="img-fluid rounded shake preview-image"  src="img/Sathi.jpg" alt="Three Wheeler Hybrid Car">
+                            </div>
+                        </div>
+                        <p style="text-align: center;">Three Wheeler Hybrid Car</p>
+                        <div class="supporting-images">
+                            <div class="supporting-image">
+                                <img class="img-fluid rounded shake preview-image"  src="img/wave1.jpg" alt="Three Wheeler Hybrid Car Front">
+                            </div>
+                            <div class="supporting-image">
+                                <img class="img-fluid rounded shake preview-image"  src="img/wave2.jpg" alt="Three Wheeler Hybrid Car">
+                            </div>
+                        </div>
+                        <p style="text-align: center;">Wave Magazine, February 2019</p>
+                        <div class="video-container">
+                            <video controls>
+                                <source src="img/Video CAN-InfoTech.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <p style="text-align: center;">CAN-InfoTech, 2019</p>
+                        <p style="color: rgb(10, 173, 173); margin-left: 20px;">Highlights:</p>
+                        <ul>
+                            <li style="text-align: justify;">Developed a versatile three-wheeler hybrid car capable of operating in both petrol and electric modes.</li>
+                            <li style="text-align: justify;">Integrated a 125cc 4-stroke bike engine alongside a 750W BLDC motor, allowing users to choose between traditional combustion power and eco-friendly electric propulsion based on preference and driving conditions.</li>
+                        </ul>
+                    </div> -->
+
+                    <!-- <div class="infographic-container">
+                        <div class="main-image">
+                            <h2 style="text-align: left;">Go-Kart: FireBall 2.0</h2>
+                            <img class="img-fluid rounded shake preview-image"  src="img/FireBall2.0/gokart2.jpg" alt="Go-Kart: FireBall 2.0">
+                        </div>
+                        <div class="supporting-images">
+                            <div class="supporting-image">
+                                <img class="img-fluid rounded shake preview-image"  src="img/FireBall2.0/cad.jpg" alt="FireBall CAD">
+                            </div>
+                            <div class="supporting-image">
+                                <img class="img-fluid rounded shake preview-image"  src="img/FireBall2.0/chassis.jpg" alt="Gokart Chassis">
+                            </div>
+                        </div>
+                    
+                        <div class="supporting-images">
+                            <div class="supporting-image">
+                                <img class="img-fluid rounded shake preview-image"  src="img/FireBall2.0/gokart1123.jpg" alt="FireBall 2.0">
+                            </div>
+                            <div class="supporting-image">
+                                <img class="img-fluid rounded shake preview-image"  src="img/FireBall2.0/WhatsApp Image 2024-05-20 at 19.05.08.jpeg" alt="FireBall 2.0">
+                            </div>
+                        </div>
+                        <p style="text-align: center;">FireBall 2.0</p>
+                        <div class="video-container">
+                            <video controls>
+                                <source src="img/FireBall2.0/WhatsApp Video 2024-05-20 at 19.05.25.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <p style="text-align: center;">Drift</p>
+                        <p style="color: rgb(10, 173, 173); margin-left: 20px;">Highlights:</p>
+                        <ul>
+                            <li style="text-align: justify;">Led the comprehensive design, analysis, and fabrication of a racing go-kart tailored for high-performance applications.</li>
+                            <li style="text-align: justify;">Engineered the go-kart chassis to accommodate a potent 150cc four-stroke bike engine, enabling impressive top speeds of upto 85 km/hr.</li>
+                            <li style="text-align: justify;">Incorporated with adjustable camber angle functionality, allowing for precise customization of the camber angle within a range of 15 degrees to optimize handling and facilitate smooth turning on the racetrack.</li>
+                            <li style="text-align: justify;">Implemented a chain adjustment feature to ensure optimal chain tension and transmission efficiency, enhancing overall performance and reliability during racing competitions.</li>
+                        </ul>
+                    </div> -->
+
+
+                    <!-- <div class="infographic-container">
+                        <div class="main-image">
+                            <h2 style="text-align: left;">Bamboo Panel Manufacturing Machine</h2>
+                            <img class="img-fluid rounded shake preview-image"  src="img/Bamboo Panel Machine/Bamboo 1.jpg" alt="Bamboo Panel Manufacturing Machine">
+                        </div>
+                        <div class="supporting-images">
+                            <div class="supporting-image">
+                                <img class="img-fluid rounded shake preview-image"  src="img/Bamboo Panel Machine/Bamboo 2.jpg" alt="Bamboo Panel Manufacturing Machine">
+                            </div>
+                            <div class="supporting-image">
+                                <img class="img-fluid rounded shake preview-image"  src="img/Bamboo Panel Machine/Bamboo3.png" alt="Bamboo Panel Manufacturing Machine">
+                            </div>
+                        </div>
+                        <p style="text-align: center;">Bamboo Panel Manufacturing Machine</p>
+                        <div class="supporting-images">
+                            <div class="supporting-image">
+                                <img class="img-fluid rounded shake preview-image"  src="img/Bamboo Panel Machine/Bamboo 4.jpg" alt="Fabricated Panel">
+                            </div>
+                            <div class="supporting-image">
+                                <img class="img-fluid rounded shake preview-image"  src="img/Bamboo Panel Machine/Bamboo 5.jpg" alt="UTM Testing">
+                            </div>
+                        </div>
+                        <p style="text-align: center;">Fabricated Panel and Testing</p>
+                        <div class="video-container">
+                            <video controls>
+                                <source src="img/Bamboo Panel Machine/Bamboo video.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <p style="text-align: center;">Working</p>
+                        <p style="color: rgb(10, 173, 173); margin-left: 20px;">Highlights:</p>
+                        <ul>
+                            <li style="text-align: justify;">Developed and constructed a specialized manufacturing machine for bamboo panel production, featuring automated adhesive application, mat formation, and hydraulic pressing with integrated heating elements.</li>
+                            <li style="text-align: justify;">Conducted thorough strength testing to assess the structural integrity, durability, and versatility of the bamboo panels for diverse applications.</li>
+                        </ul>
+                        <a href="img/Bamboo Panel Machine/BME_final_report_076bme004006011039finalreport1.pdf" target="_blank" style="color: blue; margin-left: 15px;">Click here to learn more</a>
+                    </div> -->
+
+                    <!-- <div class="infographic-container">
+                        <div class="main-image">
+                            <h2 style="text-align: left;">Go-Kart: FireBall</h2>
+                            <img class="img-fluid rounded shake preview-image"  src="img/Go-Kart/Go-kart 1.jpg" alt="Go-Kart: FireBall">
+                        </div>
+                        <div class="supporting-images">
+                            <div class="supporting-image">
+                                <img class="img-fluid rounded shake preview-image"  src="img/FireBall/fireball 2.jpg" alt="Go-Kart: FireBall">
+                            </div>
+                            <div class="supporting-image">
+                                <img class="img-fluid rounded shake preview-image"  src="img/FireBall/fireball 3.jpg" alt="Go-Kart: FireBall">
+                            </div>
+                        </div>
+                        <p style="text-align: center;">Go-Kart: FireBall</p>
+                        
+                        <div class="video-container">
+                            <video controls>
+                                <source src="img/FireBall/vid.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <p style="text-align: center;">Testing</p>
+                        <p style="color: rgb(10, 173, 173); margin-left: 20px;">Highlights:</p>
+                        <ul>
+                            <li style="text-align: justify;">Constructed a high-performance go-kart tailored for racing purposes, equipped with a potent 180cc four-stroke bike engine.</li>
+                            <li style="text-align: justify;">Achieved impressive speeds of upto 75 km/hr, showcasing superior acceleration and handling characteristics on the racetrack.</li>
+                        </ul>
+                      
+                    </div> -->
+
+                    <!-- <div class="infographic-container">
+                        <div class="main-image">
+                            <h2 style="text-align: left;">SuffoSafe: Automatic Bathroom Smoke Evacuation System</h2>
+                            <img class="img-fluid rounded shake preview-image"  src="img/SuffoSafe/Screenshot 2024-02-13 211357.png" alt="SuffoSafe">
+                        </div>
+                        
+                        <p style="text-align: center;">SuffoSafe</p>
+                       
+                        <p style="color: rgb(10, 173, 173); margin-left: 20px;">Highlights:</p>
+                        <ul>
+                            <li style="text-align: justify;">Led the fabrication of the conceptual design for SuffoSafe, a pioneering safety solution developed in response to a tragic incident involving suffocation in a non-ventilated bathroom.</li>
+                            <li style="text-align: justify;">SuffoSafe kicks into action when it senses too much smoke, quickly getting rid of it to keep people safe.</li>
+                            <li style="text-align: justify;">It's aim is to make bathrooms safer by stopping suffocation accidents caused by poor ventilation.</li>
+                    
+                        </ul>
+                       
+                    </div> -->
+
+                    <!-- <div class="infographic-container">
+                        <div class="main-image">
+                            <h2 style="text-align: left;">Go-Kart</h2>
+                            <img class="img-fluid rounded shake preview-image"  src="img/Go-Kart/Go-kart 1.jpg" alt="Go-Kart">
+                        </div>
+                        <div class="supporting-images">
+                            <div class="supporting-image">
+                                <img class="img-fluid rounded shake preview-image"  src="img/Go-Kart/Go-Kart 2.jpg" alt="Go-Kart">
+                            </div>
+                            <div class="supporting-image">
+                                <img class="img-fluid rounded shake preview-image"  src="img/Go-Kart/Go-Kart 3.jpg" alt="Go-Kart">
+                            </div>
+                        </div>
+                        <p style="text-align: center;">Go-Kart</p>
+                        
+                        <div class="video-container">
+                            <video controls>
+                                <source src="img/Go-Kart/Go-kart vid.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <p style="text-align: center;">Testing</p>
+                        <p style="color: rgb(10, 173, 173); margin-left: 20px;">Highlights:</p>
+                        <ul>
+                            <li style="text-align: justify;">Constructed a go-kart for racing purposes, equipped with a 125cc four-stroke bike engine.</li>
+                            <li style="text-align: justify;">Achieved speeds of upto 40 km/hr.</li>
+                        </ul>
+                       
+                    </div> -->
+
+
+                    <!-- <div class="infographic-container">
+                        <div class="main-image">
+                            <h2 style="text-align: left;">Rooftop Windmill</h2>
+                        </div>    
+                        <div class="supporting-images">
+                            <div class="supporting-image">
+                            
+                            <img class="img-fluid rounded shake preview-image"  src="img/Windmill/windmill 1.jpg" alt="Windmill"> 
+                            </div>
+                            <div class="supporting-image">
+                                <img class="img-fluid rounded shake preview-image"  src="img/Windmill/IMG_20211202_155903_5.jpg" alt="Windmill">
+                            </div>
+                        </div>
+                        <p style="text-align: center;">Windmill, Dhankuta</p>
+                        
+                        <div class="video-container">
+                            <video controls style="height: 700px;">
+                                <source src="img/Windmill/VID_20211202_155914.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <p style="text-align: center;">Windmill</p>
+                        <p style="color: rgb(10, 173, 173); margin-left: 20px;">Highlights:</p>
+                        <ul>
+                            <li style="text-align: justify;">Fabricated a small windmill designed for rooftop installation, capable of generating approximately 200W of power, contributing to sustainable energy solutions for buildings.</li>
+                            <li style="text-align: justify;">Featured the windmill to rotate 360 degrees, allowing for automatic adjustment to the direction of wind flow. This feature ensures optimal wind capture and maximizes energy generation efficiency.</li>
+                        </ul>
+                    
+                    </div> -->
+
+
+                    <!-- <div class="infographic-container">
+                        <div class="main-image">
+                            <h2 style="text-align: left;">Conceptual Prototype Development of Vehicle-Mounted Dust Collector</h2>
+                            <img class="img-fluid rounded shake preview-image"  src="img/Dust Collector/Dustcollector 1.png" alt="Dust Collector">
+                        </div>
+                        
+                        <p style="text-align: center;">Dust Collector</p>
+                        
+                        <div class="video-container">
+                            <video controls>
+                                <source src="img/Dust Collector/Dustcollector vid.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <p style="text-align: center;">Dust Collector on action</p>
+                        <p style="color: rgb(10, 173, 173); margin-left: 20px;">Highlights:</p>
+                        <ul>
+                            <li style="text-align: justify;">Developed a conceptual prototype of a dust collector system integrated into a vehicle, utilizing the vehicle's power to collect dust from highway roads.</li>
+                            <li style="text-align: justify;">Integrated the dust collector with the vehicle's power system, enabling the use of the vehicle's engine to operate the suction mechanism and ensure continuous dust collection during road cleaning operations.</li>
+                        </ul>
+                       
+                    </div> -->
+
+                    <!-- <div class="infographic-container">
+                        <div class="main-image">
+                            <h2 style="text-align: left;">Junk Art: "Knowledge Over Power"</h2>
+                            <img class="img-fluid rounded shake preview-image"  src="img/Junk Art/IMG_20230110_150150_1.jpg" alt="Junk Art">
+                        </div>
+                        
+                        <p style="text-align: center;">Junk Art: "Knowledge Over Power"</p>
+                    
+                        <p style="color: rgb(10, 173, 173); margin-left: 20px;">Highlights:</p>
+                        <ul>
+                            <li style="text-align: justify;">Designed and constructed a junk art sculpture titled "Knowledge Over Power," using mechanical junk to symbolize the theme that knowledge is greater than power.</li>
+                            <li style="text-align: justify;">Collaboratively collected and repurposed mechanical components to create an art piece. The sculpture combines various elements to represent the balance and interplay between knowledge and power.</li>
+                    
+                        </ul>
+                       
+                    </div> -->
+
+                    <!-- <div class="infographic-container">
+                        <div class="main-image">
+                            <h2 style="text-align: left;">Minor Projects</h2>
+                            <img class="img-fluid rounded shake preview-image"  src="img/minor project.png" alt="Junk Art">
+                        </div>
+                       
+                    </div> -->
+                    <!-- overlap margin set-->
+    
+            </div>
+    <!-- <div class="responsive-margin"></div> -->
+<!--overlap margin set end-->
+              
+            
+                
+                
+                <!-- Add more portfolio items as needed -->
+                <!-- <style>
+                    .infographic-container {
+                        margin-top: 400px;
+                    }
+            
+                    /* Small devices (phones, less than 576px) */
+        
+            
+                    /* Extra extra large devices (larger desktops, 1200px and up) */
+                    /* @media (min-width: 2000px) {
+                        .infographic-container {
+                            margin-top: 200px;
+                        }
+                    } */
+
+
+      
+
+        Extra small devices (phones, less than 576px)
+        @media (max-width: 575.98px) {
+            .infographic-container {
+                margin-top: 200px;
+            }
+        }
+
+        /* Small devices (portrait tablets and large phones, 576px and up) */
+        @media (min-width: 576px) and (max-width: 767.98px) {
+            .infographic-container {
+                margin-top: 250px;
+            }
+        }
+
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media (min-width: 768px) and (max-width: 991.98px) {
+            .infographic-container {
+                margin-top: 300px;
+            }
+        }
+
+        /* Large devices (desktops, 992px and up) */
+   
+
+        /* Extra large devices (large desktops, 1200px and up) */
+        @media (min-width: 300px) and (max-width: 500px) {
+            .infographic-container {
+                margin-top: 610px ;
+            }
+        }
+
+        @media (min-width: 500px) and (max-width: 800px) {
+            .infographic-container {
+                margin-top: 105px;
+            }
+        }
+
+        /* Extra extra large devices (larger desktops, 1600px and up) */
+        @media (min-width: 800px) and (max-width: 1999.98px) {
+            .infographic-container {
+                margin-top: 300px;
+            }
+        }
+
+        /* Very large devices (very large desktops, 2000px and up) */
+        @media (min-width: 2000px) {
+            .infographic-container {
+                margin-top: 200px;
+            }
+        }
+
+        .infographic-container {
+                margin-top: 400px;
+            }
+
+              
+                </style> -->
+
+                <!-- <div class="col-lg-12 col-md-6 mx-auto portfolio-item second">
+                    <div style="" class="infographic-container">
                         <div class="main-image">
                             <h2 style="text-align: left;">Coldstore</h2>
                             <img class="img-fluid rounded shake preview-image"  src="img/Coldstore/1.png" alt="CAD isometric view">
@@ -718,11 +1528,13 @@
                     </div>
 
                 </div>
-            </div>
-        </div>
-    </div>
-    
-
+            
+        </div> -->
+        
+            <!-- </div> -->
+        
+    <!-- </div>
+    </div> -->
 
       <!--Education Start-->
       <div class="container-xxl py-6 pb-5" id="education">
@@ -735,10 +1547,88 @@
           
         </div>
           
-          <meta charset="UTF-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>Education Section</title>
-        
+          <style>
+              body {
+                  font-family: Arial, sans-serif;
+                  background-color: #f8f9fa;
+                  margin: 0;
+                  padding: 0;
+              }
+      
+              .container {
+                  padding: 0 15px;
+                  margin: 0 auto;
+                  max-width: 100%;
+              }
+      
+              .education-container {
+                  background-color: white;
+                  padding: 10px;
+                  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+                  border-radius: 5px;
+              }
+      
+              .education-container h1 {
+                  text-align: left;
+                  margin-bottom: 10px;
+                  color: #333;
+                  font-size: 20px;
+              }
+      
+              .accordion {
+                  width: 100%;
+              }
+      
+              .accordion-item {
+                  border-bottom: 1px solid #ddd;
+                  overflow: hidden;
+              }
+      
+              .accordion-header {
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  padding: 5px 10px;
+                  background-color: #e9ecef;
+                  cursor: pointer;
+                  transition: background-color 0.3s;
+              }
+      
+              .accordion-header:hover {
+                  background-color: #ddd;
+              }
+      
+              .accordion-header h2 {
+                  margin: 0;
+                  font-size: 16px;
+                  color: #333;
+              }
+      
+              .accordion-icon {
+                  font-size: 18px;
+                  color: #333;
+              }
+      
+              .accordion-content {
+                  max-height: 0;
+                  padding: 0 10px;
+                  background-color: #fff;
+                  overflow: hidden;
+                  transition: max-height 0.5s ease, padding 0.5s ease;
+              }
+      
+              .accordion-content p {
+                  margin: 5px 0;
+                  color: #666;
+              }
+      
+              .accordion-content.show {
+                  max-height: 800px;
+                  padding: 10px;
+              }
+          </style>
+      
+      
       <div class="container">
           <div class="education-container">
               <h1>Education</h1>
@@ -751,7 +1641,9 @@
                       <div class="accordion-content">
                           <p style="color:purple;"><strong>Pulchowk Campus, Institute of Engineering</strong></p>
                           <p>Tribhuvan University, 2019 - 2024</p>
+                          <li><strong>74.65%</strong></li>
                           <u>
+                            
                               <li><strong>Elective I:</strong> Heating, Ventilation, and Air Conditioning</li>
                               <li><strong>Elective II:</strong> Refrigeration</li>
                               <li><Strong>Elective III:</Strong> Building Services</li>
@@ -817,7 +1709,7 @@
           }
       </script>
       
-      
+
       <div style="margin-bottom: 20px;"></div>
       
       
@@ -825,6 +1717,19 @@
               <div class="education-container">
                   <h1>Training and Certification</h1>
                   <div class="accordion">
+
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <h2>Mentor: 7 Days Workshop on SolidWorks 2080</h2>
+                            <span class="accordion-icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p style="color:purple;"><strong>Pulchowk Campus, Institute of Engineering</strong></p>
+                            <p>SOMAES, Jan 2024</p>
+                           
+                            <img class="img-fluid rounded shake preview-image"  style="width: 100%;" src="img/Mentor.png" alt="">
+                        </div>
+                    </div>
                       <div class="accordion-item">
                           <div class="accordion-header" onclick="toggleAccordion(this)">
                               <h2>Hardware Fellowship Workshop</h2>
@@ -879,14 +1784,25 @@
                   }
               }
           </script>
-     
+          
+         
       </div>
       </div>
+
+
+      
+      
+      
       <!--Education End-->
-
-
      <!-- Experience -->
-     
+     <!--<section class="colorlib-experience" data-section="experience">
+        <div class="colorlib-narrow-content">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+                    <span class="heading-meta">Experience</span>
+                    <h2 class="colorlib-heading animate-box">Work Experience</h2>
+                </div>
+            </div> -->
             <div class="container-xxl py-6 pb-5" id="team">
                 <div class="container">
                     <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
@@ -910,6 +1826,7 @@
                            <div class="timeline-label">
                               <h2><a href="#">Research and Development Engineer Intern</a> <span>Oct 2023 - Dec 2023</span></h2>
                               
+                             
                                 <p style="color: rgb(12, 187, 245); text-align: justify;" >GreenTech Nepal Pvt.Ltd.</p>
                                 <ul style="line-height: 2.5;">
                                     <li style="text-align: justify;">Conducted a literature review on heat pump dryer systems for agricultural products and designed a custom system
@@ -932,7 +1849,7 @@
                            </div>
                            <div class="timeline-label">
                                <h2><a href="#">Undergraduate Researcher</a> <span>Jun 2023 - Apr 2024</span></h2>
-                               
+                              
                                 <p style="color: rgb(12, 187, 245);text-align: justify;" >Institute of Engineering, Tribhuvan University</p>
                                 <ul style="line-height: 2.5;">
                                     <li style="text-align: justify;">Design and fabrication of a prototype manufacturing machine tailored for bamboo panel production.</li>
@@ -944,7 +1861,7 @@
                                   
                             </ul>
                             <a href="img/Bamboo Panel Machine/BME_final_report_076bme004006011039finalreport1.pdf" target="_blank">Click here to learn more.</a>
-                       
+                        
                            </div>
                         </div>
                      </article>
@@ -952,12 +1869,13 @@
                   </div>
                </div>
            </div>
-        </div>
+           </div>
+
         </div>
 
-        <!--Achievements Start-->
+         <!-- Achievements Start-->
 
-        <div class="container-xxl py-6 pt-5" id="achievements">
+         <div class="container-xxl py-6 pt-5" id="achievements">
             <div class="container">
                 <div class="row g-5 mb-5 align-items-center wow fadeInUp" data-wow-delay="0.1s">
                     <div class="col-lg-6">
@@ -966,18 +1884,12 @@
                     
                 </div>
                 
-               <div class="row g-4 portfolio-container wow fadeInUp" data-wow-delay="0.1s"> 
-                    <div class="col-lg-12 col-md-6 mx-auto portfolio-item first">
-                     <div class="portfolio-img rounded overflow-hidden"> 
-                            
-                            
-                                <meta charset="UTF-8">
-                                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                                <title>Achievements</title>
-                                
+               <!-- <div class="row g-4 portfolio-container wow fadeInUp" data-wow-delay="0.1s">  -->
+                    
+                     <!-- <div class="portfolio-img rounded overflow-hidden">  -->
                           
                             <!--+2 B.E. Design-->
-                            
+                           
                                 <div class="infographic-container">
                                     <div class="main-image">
                                         <h2 style="text-align: left;">Winner: +2 B.E. Design Competition</h2>
@@ -996,10 +1908,9 @@
                                 </div>
                             
                             
-                            
-                        </div>
-                        <!--+2 B.E. Design-->
                         
+                        <!--+2 B.E. Design-->
+                       
                             <div class="infographic-container">
                                 <div class="main-image">
                                     <h2 style="text-align: left;">Winner: +2 B.E. Design Competition</h2>
@@ -1043,7 +1954,7 @@
                             </div>
                         
                         <!--Go-Kart League-->
-                        
+                      
                             <div class="infographic-container">
                                 <div class="main-image">
                                     <h2 style="text-align: left;">Winner: Go-Kart League</h2>
@@ -1067,9 +1978,9 @@
                                 </div>
                                 
                             </div>
-                       
+                        
                         <!--3D Design Hackathon-->
-                      
+                       
                             <div class="infographic-container">
                                 <div class="main-image">
                                     <h2 style="text-align: left;">2nd Runner Up: 3D Design Hackathon</h2>
@@ -1078,15 +1989,147 @@
                                 </div>
                                 
                             </div>
-                       
+                        
+                  
+                </div>
+            <!-- </div> -->
+        </div>
+
+                <!--Achievement End -->
+    
+     <!-- Team Start -->
+    <!--<div class="container-xxl py-6 pb-5" id="team">
+        <div class="container">
+            <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-6">
+                    <h1 class="display-5 mb-0">Team Members</h1>
+                </div>
+                <div class="col-lg-6 text-lg-end">
+                    <a class="btn btn-primary py-3 px-5" href="">Contact Us</a>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item position-relative">
+                        <img class="img-fluid rounded" src="img/team-1.jpg" alt="">
+                        <div class="team-text bg-white rounded-end p-4">
+                            <div>
+                                <h5>Full Name</h5>
+                                <span>Designer</span>
+                            </div>
+                            <i class="fa fa-arrow-right fa-2x text-primary"></i>
+                        </div>
                     </div>
                 </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item position-relative">
+                        <img class="img-fluid rounded" src="img/team-2.jpg" alt="">
+                        <div class="team-text bg-white rounded-end p-4">
+                            <div>
+                                <h5>Full Name</h5>
+                                <span>Designer</span>
+                            </div>
+                            <i class="fa fa-arrow-right fa-2x text-primary"></i>
+                        </div>
+                    </div>
                 </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item position-relative">
+                        <img class="img-fluid rounded" src="img/team-3.jpg" alt="">
+                        <div class="team-text bg-white rounded-end p-4">
+                            <div>
+                                <h5>Full Name</h5>
+                                <span>Designer</span>
+                            </div>
+                            <i class="fa fa-arrow-right fa-2x text-primary"></i>
+                        </div>
+                    </div>
                 </div>
-
-                <!--Achievement End-->
-
-    <!-- Family Starts -->
+            </div>
+        </div>
+    </div> -->
+    <!-- Team End -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            line-height: 1.6;
+        }
+        .infographic-container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        .main-image {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .main-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .supporting-images {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .supporting-image {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .supporting-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .video-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .video-container video {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        h1 {
+            font-size: 2em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .description {
+            margin-top: 10px;
+            font-size: 1em;
+            color: #555;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .supporting-images {
+                flex-direction: column;
+            }
+            .supporting-image {
+                margin-bottom: 20px;
+            }
+        }
+        .social-icons a {
+color: #4CAF50;
+text-decoration: none;
+margin-right: 10px;
+font-size: 24px;
+}
+.social-icons a:hover {
+color: #333;
+}
+    </style>
+        <!-- Testimonial Start -->
      <div class="container-fluid bg-light py-5 my-5" id="family">
         <div class="container-fluid py-5">
                 
@@ -1150,9 +2193,7 @@
         </div>
     </div> 
     
-    <!-- Family End -->
-
-
+    <!-- Testimonial End -->
     <!-- Contact Start -->
    
     <div class="container-xxl pb-5" id="contact">
@@ -1225,41 +2266,96 @@
     <!-- Contact End -->
  
 <!--Work background starts-->
- 
-
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .contact-section {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .contact-title {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #000;
+        }
+
+        .contact-subtitle {
+            font-size: 16px;
+            margin-bottom: 40px;
+            color: #666;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        
+
+        .contact-item {
+            flex: 1 1 25%;
+            width: 25%; /* Adjust as needed */
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+            margin: 10px 0;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: background 0.3s;
+            text-align: center;
+        }
+
+        .contact-item:hover {
+            background: #e9e9e9;
+        }
+
+        .contact-icon {
+            font-size: 40px;
+            margin-bottom: 10px;
+            color: #FFA500; /* Orange color */
+        }
+
+        h4 {
+            margin-bottom: 10px;
+            font-size: 18px;
+            color: #000;
+        }
+
+        p {
+            margin: 0;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+  
+
+
+    
+
+
+
 <!--Work Background end-->
-
-    <!-- Map Start -->
-   <!-- <div class="container-xxl pt-5 px-0 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container-xxl pt-5 px-0">
-            <div class="bg-dark">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d454.1149730035005!2d85.33722241362621!3d27.677593486678255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjfCsDQwJzM5LjciTiA4NcKwMjAnMTQuOSJF!5e0!3m2!1sen!2snp!4v1715871760818!5m2!1sen!2snp" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </div>
-    </div>-->
-    <!-- Map End -->
-
-
-    <!-- Copyright Start -->
-   <!-- <div class="container-fluid bg-dark text-white py-4">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom text-secondary" href="#">Your Site Name</a>, All Right Reserved.
-                    </div>
-                    <div class="col-md-6 text-center text-md-end">-->
-                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                      <!--  Designed By <a class="border-bottom text-secondary" href="https://htmlcodex.com">HTML Codex</a>
-                        <br>Distributed By: <a class="border-bottom" href="https://themewagon.com" target="_blank">ThemeWagon</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>-->
-    <!-- Copyright End -->
-
 
 
     <!-- Back to Top -->
@@ -1328,6 +2424,6 @@
             }
         });
     </script>
+ 
 </body>
-
 </html>
